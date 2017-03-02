@@ -8,7 +8,7 @@ DirsTreeView::DirsTreeView(QWidget *parent)
 {
     QFileSystemModel *model = new QFileSystemModel();
     model->setFilter(QDir::AllDirs | QDir::NoDot | QDir::NoDotDot);
-    qDebug() << QDir::homePath();
+    //qDebug() << QDir::homePath();
     model->setRootPath(QDir::homePath());
     setModel(model);
     setHeaderHidden(true);
